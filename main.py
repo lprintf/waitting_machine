@@ -1,4 +1,4 @@
-from asyncio import sleep
+from time import sleep
 from send_email import send_email, make_message
 from watch_machine import Info, watch_machine, process_info
 

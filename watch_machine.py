@@ -54,7 +54,7 @@ def watch_machine(
         GPU_status = pattern_tcut.findall(status)
         for gpu, temperature, utilization, used_memory, total_memory in GPU_status:
             # 判断其实也不该在本函数实现
-            if int(utilization) < 10 or int(used_memory) / int(total_memory) < 0.1:
+            if int(used_memory) / int(total_memory) < 0.1:
                 # '''
                 # Traceback (most recent call last):
                 #     TypeError: default_when_idle() takes 0 positional arguments but 6 were given
